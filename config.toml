@@ -1,0 +1,70 @@
+baseURL = 'https://creativefabric.tech/'
+languageCode = 'en'
+defaultContentLanguage = 'en'
+title = 'Creative Fabric Tech' # Title on Meta Tags
+paginate = 20
+theme = 'alpha'
+enableRobotsTXT = true
+disableKinds = ['section', 'posts']
+
+[permalinks]
+  posts = '/:title/'
+  pages = '/:title/'
+
+
+[taxonomies]
+  category = 'categories'
+
+[outputs]
+  page = ['HTML']
+  home = ['HTML','RSS']
+  section = ['HTML']
+  taxonomyTerm = ['HTML']
+  taxonomy = ['HTML']
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = 'application/rss'
+    baseName = 'rss'    
+
+[params]
+  title = 'Creative Fabric Tech' # Title on Header
+  tagline = 'Inspire. Create. Fabricate.'
+  description = 'Discover the Artistry of Creative Fabric Design and Decoration. Explore Innovative Techniques, Patterns, and Inspiration for Stunning Fabric Creations.'
+  author = 'FabricWhisperer'
+  recentposts = 14
+
+[menu]
+
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 2
+
+  [[menu.main]]
+    identifier = 'privacy-policy'
+    name = 'Privacy Policy'
+    url = '/privacy-policy/'
+    weight = 3
+
+  [[menu.main]]
+    identifier = 'dmca'
+    name = 'DMCA'
+    url = '/dmca/'
+    weight = 4
+
+# [menu]
+
+#   [[menu.socialsidebar]]
+#     identifier = 'facebook'
+#     name = 'facebook'
+#     url = '#'
+#     icon = '<i class='fa fa-facebook'></i>'
+#     weight = '1'
